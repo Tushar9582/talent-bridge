@@ -1,0 +1,14 @@
+import { Link, createFileRoute } from "@tanstack/react-router";
+import { ArrowUpRight } from "lucide-react";
+import heroImage from "@/assets/meridian-hero.jpg";
+import healthcareImage from "@/assets/meridian-healthcare.jpg";
+import hospitalityImage from "@/assets/meridian-hospitality.jpg";
+import teamImage from "@/assets/meridian-team.jpg";
+import { PageBanner, PrimaryLink } from "@/components/site-shell";
+
+export const Route = createFileRoute("/industries")({ head: () => ({ meta: [{ title: "Industries We Serve | Meridian Workforce" }, { name: "description", content: "Meridian supports employers across construction, energy, healthcare, hospitality, aviation, engineering, and more." }, { property: "og:title", content: "Industries We Serve | Meridian Workforce" }, { property: "og:description", content: "Sector-aware talent placement for critical industries." }] }), component: IndustriesPage });
+
+const industries = ["Construction", "Oil & Gas", "Hospitality", "Healthcare", "Aviation", "Railways", "Agriculture", "Engineering", "IT & Telecom", "Facilities Management", "Banking & Finance", "Manufacturing"];
+const images = [heroImage, teamImage, hospitalityImage, healthcareImage];
+
+function IndustriesPage() { return <><PageBanner eyebrow="Industries we serve" title="People who understand the work." description="Our sector specialists know the roles, standards, and pace behind the industries shaping the region." /><section className="mx-auto max-w-7xl px-5 py-20 lg:px-8"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{industries.map((industry, index) => <Link key={industry} to="/contact" className="group overflow-hidden rounded-2xl border border-line bg-card transition-transform hover:-translate-y-1">{index < 4 ? <img src={images[index]} alt={`${industry} professionals at work`} width={900} height={1100} loading="lazy" className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" /> : <div className="flex aspect-[4/3] items-end bg-accent/60 p-6"><span className="font-mono text-xs text-primary">SECTOR {String(index + 1).padStart(2, "0")}</span></div>}<div className="flex items-center justify-between p-5"><span className="font-display font-bold">{industry}</span><ArrowUpRight className="size-4 text-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></div></Link>)}</div><div className="mt-14 flex flex-wrap items-center justify-between gap-6 rounded-2xl border border-line bg-card/50 p-8"><div><p className="eyebrow text-teal">Need a specialist role?</p><h2 className="mt-3 font-display text-2xl font-bold">Let’s talk about the people your industry needs.</h2></div><PrimaryLink to="/contact">Share your requirement</PrimaryLink></div></section></>; }
