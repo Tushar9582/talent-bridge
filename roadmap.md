@@ -1,2 +1,2 @@
 - [x] Build Meridian Workforce recruitment site
-- [ ] Fix preview typecheck/build errors
+- [x] Fix preview typecheck/build errors

@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, ChevronRight, FileDown, Menu, MessageCircle, X } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 
-import mark from "@/../public/meridian-mark.png";
+import mark from "@/assets/meridian-mark.png";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
