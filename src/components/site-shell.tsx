@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, ChevronRight, FileDown, Menu, MessageCircle, X } from "lucide-react";
+import { ArrowUpRight, ChevronRight, Instagram, Linkedin, Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 
-import mark from "@/assets/meridian-mark.png";
+import logo from "@/assets/skillmint-logo.png.asset.json";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -10,7 +10,8 @@ const navItems = [
   { label: "About us", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Industries", to: "/industries" },
-  { label: "Clients", to: "/clients" },
+  { label: "Recruitment process", to: "/process" },
+  { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ] as const;
 
@@ -27,13 +28,10 @@ export function SiteChrome({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen overflow-x-clip bg-background text-foreground">
       <UtilityBar />
-      <header className="sticky top-0 z-40 border-b border-line bg-background/80 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-line bg-background/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <Link to="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-            <img src={mark} alt="Meridian Workforce mark" width={40} height={40} className="size-10 rounded-lg" />
-            <span className="font-display text-lg font-bold tracking-tight">
-              Meridian <span className="font-sans text-sm font-normal text-muted-foreground">Workforce</span>
-            </span>
+             <span className="grid h-14 w-40 place-items-center overflow-hidden rounded-lg bg-card p-1 shadow-sm"><img src={logo.url} alt="Skillmint Global Solutions logo" width={240} height={160} className="max-h-full w-full object-contain" /></span>
           </Link>
 
           <nav className="hidden items-center gap-7 text-sm text-muted-foreground lg:flex" aria-label="Primary navigation">
@@ -45,8 +43,8 @@ export function SiteChrome({ children }: { children: ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button asChild variant="default" className="hidden rounded-full px-5 sm:inline-flex">
-              <Link to="/apply">Apply for a job <ArrowUpRight /></Link>
+             <Button asChild variant="default" className="hidden rounded-full px-5 sm:inline-flex">
+               <Link to="/contact">Get in touch <ArrowUpRight /></Link>
             </Button>
             <Button variant="ghost" size="icon" className="lg:hidden" aria-label={menuOpen ? "Close menu" : "Open menu"} onClick={() => setMenuOpen((open) => !open)}>
               {menuOpen ? <X /> : <Menu />}
@@ -62,7 +60,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
                 </Link>
               ))}
               <Button asChild className="mt-3 w-full rounded-full">
-                <Link to="/apply" onClick={() => setMenuOpen(false)}>Apply for a job <ArrowUpRight /></Link>
+                 <Link to="/contact" onClick={() => setMenuOpen(false)}>Get in touch <ArrowUpRight /></Link>
               </Button>
             </div>
           </nav>
@@ -78,8 +76,8 @@ export function SiteChrome({ children }: { children: ReactNode }) {
             <ChevronRight className="-rotate-90" />
           </Button>
         )}
-        <Button asChild size="icon" className="size-14 rounded-full bg-teal text-teal-foreground shadow-lg shadow-teal/20 hover:bg-teal/90" aria-label="WhatsApp live help">
-          <a href="https://wa.me/97145550142" target="_blank" rel="noreferrer"><MessageCircle /></a>
+         <Button asChild size="icon" className="size-14 rounded-full bg-secondary text-secondary-foreground shadow-lg shadow-secondary/20 hover:bg-secondary/90" aria-label="Talk to Skillmint">
+           <Link to="/contact"><MessageCircle /></Link>
         </Button>
       </div>
     </div>
@@ -88,10 +86,10 @@ export function SiteChrome({ children }: { children: ReactNode }) {
 
 function UtilityBar() {
   return (
-    <div className="border-b border-line bg-background/90">
+     <div className="border-b border-primary/20 bg-primary text-primary-foreground">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground lg:px-8">
-        <span className="truncate">Licence No. ME/HR/2019-0442 · Overseas placement</span>
-        <div className="hidden items-center gap-5 sm:flex"><span>+971 4 555 0142</span><span className="text-teal">WhatsApp live help</span></div>
+         <div className="hidden items-center gap-5 sm:flex"><a href="#" aria-label="LinkedIn"><Linkedin className="size-3.5" /></a><a href="#" aria-label="Instagram"><Instagram className="size-3.5" /></a><a href="#" aria-label="Facebook"><span className="text-xs font-bold">f</span></a></div>
+         <div className="flex items-center gap-5"><span>[PHONE NUMBER]</span><span className="hidden sm:inline">[EMAIL]</span></div>
       </div>
     </div>
   );
@@ -101,7 +99,7 @@ export function PageBanner({ eyebrow, title, description }: { eyebrow: string; t
   return (
     <section className="aurora-field border-b border-line">
       <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
-        <p className="eyebrow text-primary">{eyebrow}</p>
+         <p className="eyebrow text-secondary">{eyebrow}</p>
         <h1 className="mt-5 max-w-4xl font-display text-5xl font-extrabold leading-[0.96] tracking-tight text-balance sm:text-7xl">{title}</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">{description}</p>
       </div>
@@ -133,7 +131,7 @@ export function LogoMarquee() {
   );
 }
 
-export function PrimaryLink({ to, children }: { to: "/" | "/about" | "/services" | "/industries" | "/clients" | "/contact" | "/apply"; children: ReactNode }) {
+export function PrimaryLink({ to, children }: { to: "/" | "/about" | "/services" | "/industries" | "/process" | "/careers" | "/contact"; children: ReactNode }) {
   return <Button asChild className="rounded-full px-5"><Link to={to}>{children}<ArrowUpRight /></Link></Button>;
 }
 
@@ -145,12 +143,12 @@ function SiteFooter() {
   return (
     <footer className="border-t border-line bg-background">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:px-8">
-        <div><Link to="/" className="flex items-center gap-3"><img src={mark} alt="Meridian Workforce mark" width={40} height={40} className="size-10 rounded-lg" /><span className="font-display text-lg font-bold">Meridian</span></Link><p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">A trusted bridge between capable people and serious employers across the Gulf and beyond.</p><div className="mt-5 text-sm text-muted-foreground">Marina Tower, Dubai<br />+971 4 555 0142<br />hello@meridianworkforce.com</div></div>
-        <FooterList title="Industries" items={["Construction", "Oil & Gas", "Healthcare", "Aviation", "IT & Telecom"]} />
-        <FooterList title="Services" items={["Recruitment", "Visa stamping", "Immigration", "HR management", "Personality assessment"]} />
-        <FooterList title="Useful links" items={["About us", "Our clients", "Contact us", "Terms & conditions", "Privacy policy"]} />
+         <div><Link to="/" className="inline-flex rounded-lg bg-card p-1"><img src={logo.url} alt="Skillmint Global Solutions logo" width={240} height={160} className="h-14 w-40 object-contain" /></Link><p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">Pune-based HR and manpower consultancy helping organisations find capable, dependable professionals.</p><p className="mt-4 font-display font-semibold text-primary">Refining Skills. Minting Success.</p><div className="mt-5 space-y-2 text-sm text-muted-foreground"><p className="flex items-center gap-2"><Phone className="size-4 text-secondary" />[PHONE NUMBER]</p><p className="flex items-center gap-2"><Mail className="size-4 text-secondary" />[EMAIL]</p><p>[OFFICE ADDRESS]</p></div></div>
+         <FooterList title="Industries" items={["Banking & Finance", "Information Technology", "Healthcare", "Manufacturing", "Logistics"]} />
+         <FooterList title="Services" items={["Talent acquisition", "Workforce solutions", "Candidate screening", "Industry partnerships"]} />
+         <FooterList title="Useful links" items={["About us", "Careers", "Contact us", "Terms of service", "Privacy policy"]} />
       </div>
-      <div className="border-t border-line"><div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8"><span>© 2026 Meridian Workforce. All rights reserved.</span><span>People placed with care.</span></div></div>
+       <div className="border-t border-line"><div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8"><span>© 2026 Skillmint Global Solutions. All Rights Reserved.</span><span>Refining Skills. Minting Success.</span></div></div>
     </footer>
   );
 }
