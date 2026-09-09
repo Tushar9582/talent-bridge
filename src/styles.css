@@ -62,8 +62,8 @@
   --color-teal: var(--teal);
   --color-teal-foreground: var(--teal-foreground);
   --color-line: var(--line);
-  --font-display: "Inter Tight", sans-serif;
-  --font-sans: "Inter", sans-serif;
+  --font-display: "Manrope", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
