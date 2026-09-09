@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, ChevronRight, Instagram, Linkedin, Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
+import { ArrowUpRight, ChevronRight, FileDown, Instagram, Linkedin, Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 
 import logo from "@/assets/skillmint-logo.png.asset.json";
@@ -121,11 +121,11 @@ export function StatBlock({ value, label, accent = false }: { value: string; lab
 }
 
 export function LogoMarquee() {
-  const logos = ["AL NOOR", "DELTA ENERGY", "HAVEN", "COBALT", "NORTHGATE", "SKYLINE"];
+  const sectors = ["Banking & Finance", "Information Technology", "Healthcare", "Manufacturing", "Logistics", "Hospitality"];
   return (
     <div className="overflow-hidden border-y border-line py-6 [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
       <div className="marquee-track flex w-max gap-14 whitespace-nowrap">
-        {[...logos, ...logos].map((logo, index) => <span key={`${logo}-${index}`} className="font-display text-xl font-bold tracking-tight text-muted-foreground/45 transition-colors hover:text-primary">{logo}</span>)}
+        {[...sectors, ...sectors].map((sector, index) => <span key={`${sector}-${index}`} className="font-display text-xl font-bold tracking-tight text-muted-foreground/45 transition-colors hover:text-primary">{sector}</span>)}
       </div>
     </div>
   );
