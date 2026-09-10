@@ -1,2 +1,5 @@
 - [x] Build Meridian Workforce recruitment site
 - [x] Fix preview typecheck/build errors
+- [ ] Add Excellence and finalize About page copy
+- [ ] Replace placeholder contact details and WhatsApp link
+- [ ] Verify contact links and preview build
