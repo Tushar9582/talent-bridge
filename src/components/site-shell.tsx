@@ -76,8 +76,8 @@ export function SiteChrome({ children }: { children: ReactNode }) {
             <ChevronRight className="-rotate-90" />
           </Button>
         )}
-         <Button asChild size="icon" className="size-14 rounded-full bg-secondary text-secondary-foreground shadow-lg shadow-secondary/20 hover:bg-secondary/90" aria-label="Talk to Skillmint">
-           <Link to="/contact"><MessageCircle /></Link>
+         <Button asChild size="icon" className="size-14 rounded-full bg-secondary text-secondary-foreground shadow-lg shadow-secondary/20 hover:bg-secondary/90" aria-label="Chat with Skillmint on WhatsApp">
+           <a href="https://wa.me/919370212543" target="_blank" rel="noreferrer"><MessageCircle /></a>
         </Button>
       </div>
     </div>
@@ -89,7 +89,7 @@ function UtilityBar() {
      <div className="border-b border-primary/20 bg-primary text-primary-foreground">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground lg:px-8">
          <div className="hidden items-center gap-5 sm:flex"><a href="#" aria-label="LinkedIn"><Linkedin className="size-3.5" /></a><a href="#" aria-label="Instagram"><Instagram className="size-3.5" /></a><a href="#" aria-label="Facebook"><span className="text-xs font-bold">f</span></a></div>
-         <div className="flex items-center gap-5"><span>[PHONE NUMBER]</span><span className="hidden sm:inline">[EMAIL]</span></div>
+         <div className="flex items-center gap-5"><a href="tel:+919370212543" className="transition-colors hover:text-secondary">+91 93702 12543</a><a href="mailto:hr@skillmintglobal.com" className="hidden transition-colors hover:text-secondary sm:inline">hr@skillmintglobal.com</a></div>
       </div>
     </div>
   );
@@ -143,7 +143,7 @@ function SiteFooter() {
   return (
     <footer className="border-t border-line bg-background">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:px-8">
-         <div><Link to="/" className="inline-flex rounded-lg bg-card p-1"><img src={logo.url} alt="Skillmint Global Solutions logo" width={240} height={160} className="h-14 w-40 object-contain" /></Link><p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">Pune-based HR and manpower consultancy helping organisations find capable, dependable professionals.</p><p className="mt-4 font-display font-semibold text-primary">Refining Skills. Minting Success.</p><div className="mt-5 space-y-2 text-sm text-muted-foreground"><p className="flex items-center gap-2"><Phone className="size-4 text-secondary" />[PHONE NUMBER]</p><p className="flex items-center gap-2"><Mail className="size-4 text-secondary" />[EMAIL]</p><p>[OFFICE ADDRESS]</p></div></div>
+         <div><Link to="/" className="inline-flex rounded-lg bg-card p-1"><img src={logo.url} alt="Skillmint Global Solutions logo" width={240} height={160} className="h-14 w-40 object-contain" /></Link><p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">Pune-based HR and manpower consultancy helping organisations find capable, dependable professionals.</p><p className="mt-4 font-display font-semibold text-primary">Refining Skills. Minting Success.</p><div className="mt-5 space-y-2 text-sm text-muted-foreground"><a href="tel:+919370212543" className="flex items-center gap-2 transition-colors hover:text-primary"><Phone className="size-4 text-secondary" />+91 93702 12543</a><a href="mailto:hr@skillmintglobal.com" className="flex items-center gap-2 transition-colors hover:text-primary"><Mail className="size-4 text-secondary" />hr@skillmintglobal.com</a><p>Pune, Maharashtra, India</p></div></div>
          <FooterList title="Industries" items={["Banking & Finance", "Information Technology", "Healthcare", "Manufacturing", "Logistics"]} />
          <FooterList title="Services" items={["Talent acquisition", "Workforce solutions", "Candidate screening", "Industry partnerships"]} />
          <FooterList title="Useful links" items={["About us", "Careers", "Contact us", "Terms of service", "Privacy policy"]} />
