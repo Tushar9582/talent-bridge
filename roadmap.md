@@ -3,3 +3,4 @@
 - [ ] Add Excellence and finalize About page copy
 - [ ] Replace placeholder contact details and WhatsApp link
 - [ ] Verify contact links and preview build
+- [ ] Wire Careers applications to secure Cloud storage and email delivery
