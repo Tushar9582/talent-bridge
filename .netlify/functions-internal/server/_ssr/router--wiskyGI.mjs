@@ -2,12 +2,12 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
-import { s as SiteChrome } from "./site-shell-jB3eAwpA.mjs";
+import { s as SiteChrome } from "./site-shell-BfIt3It_.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Ds3gcMgi.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router--wiskyGI.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-6B9HQtTW.css";
+var styles_default = "/assets/styles-CC7QVcS1.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -173,7 +173,7 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SiteChrome, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) })
 	});
 }
-var $$splitComponentImporter$8 = () => import("./routes-CqH8VCFe.mjs");
+var $$splitComponentImporter$8 = () => import("./routes-CdQrmH2w.mjs");
 var Route$8 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Meridian Workforce | Gulf Talent Placement" },
@@ -192,7 +192,7 @@ var Route$8 = createFileRoute("/")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-var $$splitComponentImporter$7 = () => import("./about-7JHIDvS4.mjs");
+var $$splitComponentImporter$7 = () => import("./about-BEWLtQ_h.mjs");
 var Route$7 = createFileRoute("/about")({
 	head: () => ({ meta: [
 		{ title: "About Skillmint Global Solutions" },
@@ -219,7 +219,7 @@ var Route$7 = createFileRoute("/about")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-var $$splitComponentImporter$6 = () => import("./careers-BtHsZKnE.mjs");
+var $$splitComponentImporter$6 = () => import("./careers-Dxiptpku.mjs");
 var Route$6 = createFileRoute("/careers")({
 	head: () => ({ meta: [
 		{ title: "Careers | Skillmint Global Solutions" },
@@ -246,7 +246,7 @@ var Route$6 = createFileRoute("/careers")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$5 = () => import("./contact-CeSuchSr.mjs");
+var $$splitComponentImporter$5 = () => import("./contact-BD_8JRg5.mjs");
 var Route$5 = createFileRoute("/contact")({
 	head: () => ({ meta: [
 		{ title: "Contact Skillmint Global Solutions" },
@@ -273,7 +273,7 @@ var Route$5 = createFileRoute("/contact")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./industries-CjC9_cvS.mjs");
+var $$splitComponentImporter$4 = () => import("./industries-eH4svs3Z.mjs");
 var Route$4 = createFileRoute("/industries")({
 	head: () => ({ meta: [
 		{ title: "Industries We Serve | Meridian Workforce" },
@@ -292,7 +292,7 @@ var Route$4 = createFileRoute("/industries")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./privacy-JaEgEBta.mjs");
+var $$splitComponentImporter$3 = () => import("./privacy-B0FBUQGM.mjs");
 var Route$3 = createFileRoute("/privacy")({
 	head: () => ({ meta: [
 		{ title: "Privacy Policy | Skillmint Global Solutions" },
@@ -319,7 +319,7 @@ var Route$3 = createFileRoute("/privacy")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./process-BL_h8ZB6.mjs");
+var $$splitComponentImporter$2 = () => import("./process-C0aWF04E.mjs");
 var Route$2 = createFileRoute("/process")({
 	head: () => ({ meta: [
 		{ title: "Recruitment Process | Skillmint Global Solutions" },
@@ -338,7 +338,7 @@ var Route$2 = createFileRoute("/process")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./services-CMF17Php.mjs");
+var $$splitComponentImporter$1 = () => import("./services-8r38Q4Yw.mjs");
 var Route$1 = createFileRoute("/services")({
 	head: () => ({ meta: [
 		{ title: "HR & Recruitment Services | Skillmint" },
@@ -357,7 +357,7 @@ var Route$1 = createFileRoute("/services")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./terms-CASRU4vd.mjs");
+var $$splitComponentImporter = () => import("./terms-BTf6uIQj.mjs");
 var Route = createFileRoute("/terms")({
 	head: () => ({ meta: [
 		{ title: "Terms & Conditions | Skillmint Global Solutions" },

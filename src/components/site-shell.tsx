@@ -1,4 +1,3 @@
-
 import { Link } from "@tanstack/react-router";
 import {
   ArrowUpRight,
@@ -43,14 +42,10 @@ export function SiteChrome({ children }: { children: ReactNode }) {
     <div className="min-h-screen overflow-x-clip bg-background text-foreground">
       <UtilityBar />
 
-      <header className="sticky top-0 z-40 border-b border-line bg-background/95 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-line bg-card/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           {/* Header Logo - Transparent Background */}
-          <Link
-            to="/"
-            className="flex items-center gap-3"
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link to="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
             <span className="flex h-14 w-40 items-center justify-center overflow-hidden bg-transparent p-0">
               <img
                 src={logo}
@@ -70,7 +65,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
               <Link
                 key={item.to}
                 to={item.to}
-                activeProps={{ className: "text-foreground" }}
+                activeProps={{ className: "text-primary" }}
                 className="transition-colors hover:text-foreground"
               >
                 {item.label}
@@ -79,11 +74,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button
-              asChild
-              variant="default"
-              className="hidden rounded-full px-5 sm:inline-flex"
-            >
+            <Button asChild variant="default" className="hidden rounded-full px-5 sm:inline-flex">
               <Link to="/contact">
                 Get in touch <ArrowUpRight />
               </Link>
@@ -103,7 +94,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
 
         {menuOpen && (
           <nav
-            className="border-t border-line bg-background px-5 py-4 lg:hidden"
+            className="border-t border-line bg-card px-5 py-4 lg:hidden"
             aria-label="Mobile navigation"
           >
             <div className="mx-auto flex max-w-7xl flex-col gap-1">
@@ -119,10 +110,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
               ))}
 
               <Button asChild className="mt-3 w-full rounded-full">
-                <Link
-                  to="/contact"
-                  onClick={() => setMenuOpen(false)}
-                >
+                <Link to="/contact" onClick={() => setMenuOpen(false)}>
                   Get in touch <ArrowUpRight />
                 </Link>
               </Button>
@@ -142,9 +130,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
             size="icon"
             className="glass-panel rounded-full"
             aria-label="Back to top"
-            onClick={() =>
-              window.scrollTo({ top: 0, behavior: "smooth" })
-            }
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <ChevronRight className="-rotate-90" />
           </Button>
@@ -153,14 +139,10 @@ export function SiteChrome({ children }: { children: ReactNode }) {
         <Button
           asChild
           size="icon"
-          className="size-14 rounded-full bg-secondary text-secondary-foreground shadow-lg shadow-secondary/20 hover:bg-secondary/90"
+          className="size-14 rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90"
           aria-label="Chat with Skillmint on WhatsApp"
         >
-          <a
-            href="https://wa.me/919370212543"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://wa.me/919370212543" target="_blank" rel="noreferrer">
             <MessageCircle />
           </a>
         </Button>
@@ -171,8 +153,8 @@ export function SiteChrome({ children }: { children: ReactNode }) {
 
 function UtilityBar() {
   return (
-    <div className="border-b border-primary/20 bg-primary text-primary-foreground">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground lg:px-8">
+    <div className="border-b border-white/15 bg-navy text-white">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-white/75 lg:px-8">
         <div className="hidden items-center gap-5 sm:flex">
           <a href="#" aria-label="LinkedIn">
             <Linkedin className="size-3.5" />
@@ -188,16 +170,13 @@ function UtilityBar() {
         </div>
 
         <div className="flex items-center gap-5">
-          <a
-            href="tel:+919370212543"
-            className="transition-colors hover:text-secondary"
-          >
+          <a href="tel:+919370212543" className="transition-colors hover:text-sky">
             +91 93702 12543
           </a>
 
           <a
             href="mailto:hr@skillmintglobal.com"
-            className="hidden transition-colors hover:text-secondary sm:inline"
+            className="hidden transition-colors hover:text-sky sm:inline"
           >
             hr@skillmintglobal.com
           </a>
@@ -253,11 +232,7 @@ export function SectionIntro({
           {title}
         </h2>
 
-        {description && (
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            {description}
-          </p>
-        )}
+        {description && <p className="mt-4 leading-relaxed text-muted-foreground">{description}</p>}
       </div>
 
       {action}
@@ -319,14 +294,7 @@ export function PrimaryLink({
   to,
   children,
 }: {
-  to:
-    | "/"
-    | "/about"
-    | "/services"
-    | "/industries"
-    | "/process"
-    | "/careers"
-    | "/contact";
+  to: "/" | "/about" | "/services" | "/industries" | "/process" | "/careers" | "/contact";
   children: ReactNode;
 }) {
   return (
@@ -341,11 +309,7 @@ export function PrimaryLink({
 
 export function ProfileLink() {
   return (
-    <Button
-      asChild
-      variant="outline"
-      className="glass-panel rounded-full px-5"
-    >
+    <Button asChild variant="outline" className="glass-panel rounded-full px-5">
       <a href="/company-profile.pdf" download>
         <FileDown /> Download company profile
       </a>
@@ -355,14 +319,11 @@ export function ProfileLink() {
 
 function SiteFooter() {
   return (
-    <footer className="border-t border-line bg-background">
+    <footer className="border-t border-white/15 bg-navy text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:px-8">
         <div>
           {/* Footer Logo - Transparent Background */}
-          <Link
-            to="/"
-            className="inline-flex items-center bg-transparent p-0"
-          >
+          <Link to="/" className="inline-flex items-center bg-transparent p-0">
             <img
               src={logo}
               alt="Skillmint Global Solutions logo"
@@ -372,9 +333,9 @@ function SiteFooter() {
             />
           </Link>
 
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Pune-based HR and manpower consultancy helping organisations find
-            capable, dependable professionals.
+          <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/75">
+            Pune-based HR and manpower consultancy helping organisations find capable, dependable
+            professionals.
           </p>
 
           <p className="mt-4 font-display font-semibold text-primary">
@@ -384,21 +345,21 @@ function SiteFooter() {
           <div className="mt-5 space-y-2 text-sm text-muted-foreground">
             <a
               href="tel:+919370212543"
-              className="flex items-center gap-2 transition-colors hover:text-primary"
+              className="flex items-center gap-2 transition-colors hover:text-sky"
             >
-              <Phone className="size-4 text-secondary" />
+              <Phone className="size-4 text-sky" />
               +91 93702 12543
             </a>
 
             <a
               href="mailto:hr@skillmintglobal.com"
-              className="flex items-center gap-2 transition-colors hover:text-primary"
+              className="flex items-center gap-2 transition-colors hover:text-sky"
             >
-              <Mail className="size-4 text-secondary" />
+              <Mail className="size-4 text-sky" />
               hr@skillmintglobal.com
             </a>
 
-            <p>Pune, Maharashtra, India</p>
+            <p className="text-white/75">Pune, Maharashtra, India</p>
           </div>
         </div>
 
@@ -425,18 +386,12 @@ function SiteFooter() {
 
         <FooterList
           title="Useful links"
-          items={[
-            "About us",
-            "Careers",
-            "Contact us",
-            "Terms of service",
-            "Privacy policy",
-          ]}
+          items={["About us", "Careers", "Contact us", "Terms of service", "Privacy policy"]}
         />
       </div>
 
-      <div className="border-t border-line">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <div className="border-t border-white/15">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-xs text-white/65 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <span>© 2026 Skillmint Global Solutions. All Rights Reserved.</span>
           <span>Refining Skills. Minting Success.</span>
         </div>
@@ -445,20 +400,12 @@ function SiteFooter() {
   );
 }
 
-function FooterList({
-  title,
-  items,
-}: {
-  title: string;
-  items: string[];
-}) {
+function FooterList({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
-      <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-primary">
-        {title}
-      </h3>
+      <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-sky">{title}</h3>
 
-      <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
+      <ul className="mt-5 space-y-3 text-sm text-white/75">
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}

@@ -1,8 +1,8 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Star, g as Lightbulb, o as ShieldCheck, v as Handshake } from "../_libs/lucide-react.mjs";
-import { i as PrimaryLink, o as SectionIntro, r as PageBanner } from "./site-shell-jB3eAwpA.mjs";
+import { i as PrimaryLink, o as SectionIntro, r as PageBanner } from "./site-shell-BfIt3It_.mjs";
 import { t as meridian_team_default } from "./meridian-team-gQ5WwT9H.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-7JHIDvS4.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-BEWLtQ_h.js
 var import_jsx_runtime = require_jsx_runtime();
 var coreValues = [
 	{

@@ -6,20 +6,10 @@ import { C as ChevronRight, T as ArrowUpRight, _ as Instagram, d as MessageCircl
 import { t as Slot } from "../_libs/radix-ui__react-slot.mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/site-shell-jB3eAwpA.js
+//#region node_modules/.nitro/vite/services/ssr/assets/site-shell-BfIt3It_.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var skillmint_logo_png_asset_default = {
-	version: 1,
-	asset_id: "0f1a76c6-4bc3-49f7-8c78-e441faab7791",
-	project_id: "9f829d08-eb55-4a41-877b-90086df324ba",
-	url: "/__l5e/assets-v1/0f1a76c6-4bc3-49f7-8c78-e441faab7791/skillmint-logo.png",
-	r2_key: "a/v1/9f829d08-eb55-4a41-877b-90086df324ba/0f1a76c6-4bc3-49f7-8c78-e441faab7791/skillmint-logo.png",
-	original_filename: "skillmint-logo.png",
-	size: 547758,
-	content_type: "image/png",
-	created_at: "2026-09-08T05:32:46Z"
-};
+var image_default = "/assets/image-BWoOR6qs.png";
 function cn(...inputs) {
 	return twMerge(clsx(inputs));
 }
@@ -100,7 +90,7 @@ function SiteChrome({ children }) {
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(UtilityBar, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-				className: "sticky top-0 z-40 border-b border-line bg-background/95 backdrop-blur-xl",
+				className: "sticky top-0 z-40 border-b border-line bg-card/95 backdrop-blur-xl",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8",
 					children: [
@@ -109,13 +99,13 @@ function SiteChrome({ children }) {
 							className: "flex items-center gap-3",
 							onClick: () => setMenuOpen(false),
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "grid h-14 w-40 place-items-center overflow-hidden rounded-lg bg-card p-1 shadow-sm",
+								className: "flex h-14 w-40 items-center justify-center overflow-hidden bg-transparent p-0",
 								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-									src: skillmint_logo_png_asset_default.url,
+									src: image_default,
 									alt: "Skillmint Global Solutions logo",
 									width: 240,
 									height: 160,
-									className: "max-h-full w-full object-contain"
+									className: "h-full w-full object-contain"
 								})
 							})
 						}),
@@ -124,7 +114,7 @@ function SiteChrome({ children }) {
 							"aria-label": "Primary navigation",
 							children: navItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: item.to,
-								activeProps: { className: "text-foreground" },
+								activeProps: { className: "text-primary" },
 								className: "transition-colors hover:text-foreground",
 								children: item.label
 							}, item.to))
@@ -150,7 +140,7 @@ function SiteChrome({ children }) {
 						})
 					]
 				}), menuOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-					className: "border-t border-line bg-background px-5 py-4 lg:hidden",
+					className: "border-t border-line bg-card px-5 py-4 lg:hidden",
 					"aria-label": "Mobile navigation",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "mx-auto flex max-w-7xl flex-col gap-1",
@@ -188,7 +178,7 @@ function SiteChrome({ children }) {
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
 					asChild: true,
 					size: "icon",
-					className: "size-14 rounded-full bg-secondary text-secondary-foreground shadow-lg shadow-secondary/20 hover:bg-secondary/90",
+					className: "size-14 rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90",
 					"aria-label": "Chat with Skillmint on WhatsApp",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 						href: "https://wa.me/919370212543",
@@ -203,9 +193,9 @@ function SiteChrome({ children }) {
 }
 function UtilityBar() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "border-b border-primary/20 bg-primary text-primary-foreground",
+		className: "border-b border-white/15 bg-navy text-white",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground lg:px-8",
+			className: "mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-white/75 lg:px-8",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "hidden items-center gap-5 sm:flex",
 				children: [
@@ -232,11 +222,11 @@ function UtilityBar() {
 				className: "flex items-center gap-5",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "tel:+919370212543",
-					className: "transition-colors hover:text-secondary",
+					className: "transition-colors hover:text-sky",
 					children: "+91 93702 12543"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "mailto:hr@skillmintglobal.com",
-					className: "hidden transition-colors hover:text-secondary sm:inline",
+					className: "hidden transition-colors hover:text-sky sm:inline",
 					children: "hr@skillmintglobal.com"
 				})]
 			})]
@@ -343,16 +333,16 @@ function ProfileLink() {
 }
 function SiteFooter() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
-		className: "border-t border-line bg-background",
+		className: "border-t border-white/15 bg-navy text-white",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:px-8",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 						to: "/",
-						className: "inline-flex rounded-lg bg-card p-1",
+						className: "inline-flex items-center bg-transparent p-0",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: skillmint_logo_png_asset_default.url,
+							src: image_default,
 							alt: "Skillmint Global Solutions logo",
 							width: 240,
 							height: 160,
@@ -360,7 +350,7 @@ function SiteFooter() {
 						})
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground",
+						className: "mt-5 max-w-xs text-sm leading-relaxed text-white/75",
 						children: "Pune-based HR and manpower consultancy helping organisations find capable, dependable professionals."
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -372,15 +362,18 @@ function SiteFooter() {
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 								href: "tel:+919370212543",
-								className: "flex items-center gap-2 transition-colors hover:text-primary",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, { className: "size-4 text-secondary" }), "+91 93702 12543"]
+								className: "flex items-center gap-2 transition-colors hover:text-sky",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, { className: "size-4 text-sky" }), "+91 93702 12543"]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 								href: "mailto:hr@skillmintglobal.com",
-								className: "flex items-center gap-2 transition-colors hover:text-primary",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { className: "size-4 text-secondary" }), "hr@skillmintglobal.com"]
+								className: "flex items-center gap-2 transition-colors hover:text-sky",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { className: "size-4 text-sky" }), "hr@skillmintglobal.com"]
 							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Pune, Maharashtra, India" })
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-white/75",
+								children: "Pune, Maharashtra, India"
+							})
 						]
 					})
 				] }),
@@ -415,9 +408,9 @@ function SiteFooter() {
 				})
 			]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: "border-t border-line",
+			className: "border-t border-white/15",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8",
+				className: "mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-xs text-white/65 sm:flex-row sm:items-center sm:justify-between lg:px-8",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© 2026 Skillmint Global Solutions. All Rights Reserved." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Refining Skills. Minting Success." })]
 			})
 		})]
@@ -425,10 +418,10 @@ function SiteFooter() {
 }
 function FooterList({ title, items }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-		className: "font-mono text-[11px] uppercase tracking-[0.18em] text-primary",
+		className: "font-mono text-[11px] uppercase tracking-[0.18em] text-sky",
 		children: title
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-		className: "mt-5 space-y-3 text-sm text-muted-foreground",
+		className: "mt-5 space-y-3 text-sm text-white/75",
 		children: items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: item }, item))
 	})] });
 }
