@@ -1,8 +1,8 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Star, g as Lightbulb, o as ShieldCheck, v as Handshake } from "../_libs/lucide-react.mjs";
-import { i as PrimaryLink, o as SectionIntro, r as PageBanner } from "./site-shell-BfIt3It_.mjs";
+import { i as PrimaryLink, o as SectionIntro, r as PageBanner } from "./site-shell-CLTSG3Qu.mjs";
 import { t as meridian_team_default } from "./meridian-team-gQ5WwT9H.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-BEWLtQ_h.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-Dlh5yYI1.js
 var import_jsx_runtime = require_jsx_runtime();
 var coreValues = [
 	{
@@ -82,7 +82,7 @@ function AboutPage() {
 							children: "Our Vision"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-							className: "mt-4 font-display text-3xl font-bold",
+							className: "mt-4 font-display text-3xl font-bold text-primary-foreground",
 							children: "Trusted connections. Stronger futures."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -98,7 +98,7 @@ function AboutPage() {
 							children: "Our Mission"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-							className: "mt-4 font-display text-3xl font-bold",
+							className: "mt-4 font-display text-3xl font-bold text-secondary-foreground",
 							children: "Recruitment that works for people."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {

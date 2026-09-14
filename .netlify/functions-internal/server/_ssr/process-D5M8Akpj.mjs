@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { D as ArrowDown, S as ClipboardList, b as FileCheckCorner, i as UserCheck, n as UsersRound, s as Search, u as MessageSquare } from "../_libs/lucide-react.mjs";
-import { i as PrimaryLink, r as PageBanner } from "./site-shell-BfIt3It_.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/process-C0aWF04E.js
+import { i as PrimaryLink, r as PageBanner } from "./site-shell-CLTSG3Qu.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/process-D5M8Akpj.js
 var import_jsx_runtime = require_jsx_runtime();
 var steps = [
 	{
@@ -78,7 +78,7 @@ function ProcessPage() {
 						children: "Ready when you are"
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						className: "mt-4 font-display text-3xl font-bold",
+						className: "mt-4 font-display text-3xl font-bold text-primary-foreground",
 						children: "Let’s build a stress-free recruitment journey."
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {

@@ -58,7 +58,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
           </Link>
 
           <nav
-            className="hidden items-center gap-7 text-sm text-muted-foreground lg:flex"
+            className="hidden items-center gap-7 text-sm text-primary lg:flex"
             aria-label="Primary navigation"
           >
             {navItems.map((item) => (
@@ -66,7 +66,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
                 key={item.to}
                 to={item.to}
                 activeProps={{ className: "text-primary" }}
-                className="transition-colors hover:text-foreground"
+                className="transition-colors hover:text-secondary"
               >
                 {item.label}
               </Link>
@@ -103,7 +103,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
                   key={item.to}
                   to={item.to}
                   onClick={() => setMenuOpen(false)}
-                  className="border-b border-line py-3 text-sm text-muted-foreground last:border-b-0 hover:text-foreground"
+                  className="border-b border-line py-3 text-sm text-primary last:border-b-0 hover:text-secondary"
                 >
                   {item.label}
                 </Link>
@@ -338,11 +338,11 @@ function SiteFooter() {
             professionals.
           </p>
 
-          <p className="mt-4 font-display font-semibold text-primary">
+          <p className="mt-4 font-display font-semibold text-secondary">
             Refining Skills. Minting Success.
           </p>
 
-          <div className="mt-5 space-y-2 text-sm text-muted-foreground">
+          <div className="mt-5 space-y-2 text-sm text-white/75">
             <a
               href="tel:+919370212543"
               className="flex items-center gap-2 transition-colors hover:text-sky"

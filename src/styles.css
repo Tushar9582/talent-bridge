@@ -64,6 +64,10 @@
   --color-navy: var(--navy);
   --color-sky: var(--sky);
   --color-line: var(--line);
+  --color-brand-deep-teal: var(--brand-deep-teal);
+  --color-brand-emerald: var(--brand-emerald);
+  --color-brand-ocean: var(--brand-ocean);
+  --color-brand-mint: var(--brand-mint);
   --font-display: "Manrope", sans-serif;
   --font-sans: "DM Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -71,80 +75,84 @@
 
 :root {
   --radius: 0.7rem;
-  --navy: #082f49;
-  --sky: #38bdf8;
-  --background: #f4f8fc;
-  --foreground: #0f172a;
+  --brand-deep-teal: #063b4a;
+  --brand-emerald: #16a765;
+  --brand-ocean: #087e91;
+  --brand-mint: #f3faf8;
+  --navy: #063b4a;
+  --sky: #087e91;
+  --background: #f3faf8;
+  --foreground: #243746;
   --card: #ffffff;
-  --card-foreground: #0f172a;
+  --card-foreground: #243746;
   --popover: #ffffff;
-  --popover-foreground: #0f172a;
-  --primary: #1464d2;
+  --popover-foreground: #243746;
+  --primary: #063b4a;
   --primary-foreground: #ffffff;
-  --secondary: #38bdf8;
-  --secondary-foreground: #082f49;
-  --muted: #eaf2f9;
-  --muted-foreground: #475569;
-  --accent: #e8f3fb;
-  --accent-foreground: #082f49;
+  --secondary: #16a765;
+  --secondary-foreground: #ffffff;
+  --muted: #eaf5f2;
+  --muted-foreground: #526b73;
+  --accent: #e3f2ee;
+  --accent-foreground: #063b4a;
   --destructive: #b42318;
   --destructive-foreground: #ffffff;
-  --border: #dce7f2;
-  --input: #dce7f2;
-  --ring: #1464d2;
-  --teal: #38bdf8;
-  --teal-foreground: #082f49;
-  --line: #dce7f2;
+  --border: #d9eae5;
+  --input: #d9eae5;
+  --ring: #087e91;
+  --teal: #16a765;
+  --teal-foreground: #ffffff;
+  --line: #d9eae5;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: #ffffff;
-  --sidebar-foreground: #0f172a;
-  --sidebar-primary: #1464d2;
+  --sidebar-foreground: #243746;
+  --sidebar-primary: #063b4a;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e8f3fb;
-  --sidebar-accent-foreground: #082f49;
-  --sidebar-border: #dce7f2;
-  --sidebar-ring: #1464d2;
+  --sidebar-accent: #e3f2ee;
+  --sidebar-accent-foreground: #063b4a;
+  --sidebar-border: #d9eae5;
+  --sidebar-ring: #087e91;
 }
 
 .dark {
-  --background: #082f49;
+  --background: #063b4a;
   --foreground: #ffffff;
-  --card: #0d4568;
+  --card: #0b5262;
   --card-foreground: #ffffff;
-  --popover: #0d4568;
+  --popover: #0b5262;
   --popover-foreground: #ffffff;
-  --primary: #38bdf8;
-  --primary-foreground: #082f49;
-  --secondary: #1464d2;
+  --primary: #16a765;
+  --primary-foreground: #ffffff;
+  --secondary: #087e91;
   --secondary-foreground: #ffffff;
-  --muted: #123f5c;
-  --muted-foreground: #c5d5e3;
-  --accent: #174f70;
+  --muted: #124f5a;
+  --muted-foreground: #c4d8d5;
+  --accent: #145b68;
   --accent-foreground: #ffffff;
   --destructive: #f97066;
-  --destructive-foreground: #082f49;
+  --destructive-foreground: #ffffff;
   --border: #ffffff26;
   --input: #ffffff30;
-  --ring: #38bdf8;
-  --teal: #38bdf8;
-  --teal-foreground: #082f49;
+  --ring: #16a765;
+  --teal: #16a765;
+  --teal-foreground: #ffffff;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: #0d4568;
+  --sidebar: #0b5262;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #38bdf8;
-  --sidebar-primary-foreground: #082f49;
-  --sidebar-accent: #174f70;
+  --sidebar-primary: #16a765;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #145b68;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #ffffff26;
-  --sidebar-ring: #38bdf8;
+  --sidebar-ring: #16a765;
 }
 
 @layer base {
@@ -158,12 +166,21 @@
     font-family: var(--font-sans);
     letter-spacing: 0;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--brand-deep-teal);
+  }
 }
 
 @utility glass-panel {
-  background: color-mix(in oklab, var(--background) 74%, transparent);
+  background: var(--card);
   border: 1px solid var(--border);
-  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 34px color-mix(in srgb, var(--brand-deep-teal) 7%, transparent);
 }
 
 @utility eyebrow {

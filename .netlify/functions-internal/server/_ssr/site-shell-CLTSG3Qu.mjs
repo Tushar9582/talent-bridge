@@ -6,10 +6,10 @@ import { C as ChevronRight, T as ArrowUpRight, _ as Instagram, d as MessageCircl
 import { t as Slot } from "../_libs/radix-ui__react-slot.mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/site-shell-BfIt3It_.js
+//#region node_modules/.nitro/vite/services/ssr/assets/site-shell-CLTSG3Qu.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var image_default = "/assets/image-BWoOR6qs.png";
+var image_default = "/assets/image-CmkQMi6p.png";
 function cn(...inputs) {
 	return twMerge(clsx(inputs));
 }
@@ -110,12 +110,12 @@ function SiteChrome({ children }) {
 							})
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-							className: "hidden items-center gap-7 text-sm text-muted-foreground lg:flex",
+							className: "hidden items-center gap-7 text-sm text-primary lg:flex",
 							"aria-label": "Primary navigation",
 							children: navItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: item.to,
 								activeProps: { className: "text-primary" },
-								className: "transition-colors hover:text-foreground",
+								className: "transition-colors hover:text-secondary",
 								children: item.label
 							}, item.to))
 						}),
@@ -147,7 +147,7 @@ function SiteChrome({ children }) {
 						children: [navItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 							to: item.to,
 							onClick: () => setMenuOpen(false),
-							className: "border-b border-line py-3 text-sm text-muted-foreground last:border-b-0 hover:text-foreground",
+							className: "border-b border-line py-3 text-sm text-primary last:border-b-0 hover:text-secondary",
 							children: item.label
 						}, item.to)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
 							asChild: true,
@@ -354,11 +354,11 @@ function SiteFooter() {
 						children: "Pune-based HR and manpower consultancy helping organisations find capable, dependable professionals."
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-4 font-display font-semibold text-primary",
+						className: "mt-4 font-display font-semibold text-secondary",
 						children: "Refining Skills. Minting Success."
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "mt-5 space-y-2 text-sm text-muted-foreground",
+						className: "mt-5 space-y-2 text-sm text-white/75",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 								href: "tel:+919370212543",

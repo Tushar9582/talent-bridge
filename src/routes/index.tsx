@@ -9,7 +9,7 @@ import { LogoMarquee, PrimaryLink, ProfileLink, SectionIntro, StatBlock } from "
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
-    { title: "Meridian Workforce | Gulf Talent Placement" },
+    { title: "Skillmint Refining Skills | Minting Success." },
     { name: "description", content: "Skilled and unskilled workforce placement for serious employers across the Gulf, with compliance, speed, and a human touch." },
     { property: "og:title", content: "Meridian Workforce | Gulf Talent Placement" },
     { property: "og:description", content: "The trusted bridge between capable people and serious employers." },
