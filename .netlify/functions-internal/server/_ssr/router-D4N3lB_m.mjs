@@ -176,14 +176,14 @@ function RootComponent() {
 var $$splitComponentImporter$8 = () => import("./routes-DjzAMb7N.mjs");
 var Route$8 = createFileRoute("/")({
 	head: () => ({ meta: [
-		{ title: "Meridian Workforce | Gulf Talent Placement" },
+		{ title: "Skillmint Refining Skills | Minting Success." },
 		{
 			name: "description",
 			content: "Skilled and unskilled workforce placement for serious employers across the Gulf, with compliance, speed, and a human touch."
 		},
 		{
 			property: "og:title",
-			content: "Meridian Workforce | Gulf Talent Placement"
+			content: "Skillmint Refining Skills | Minting Success."
 		},
 		{
 			property: "og:description",
