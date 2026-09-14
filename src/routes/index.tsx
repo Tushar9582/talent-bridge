@@ -32,7 +32,7 @@ function Home() {
       </h1>
 
       <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground">
-        Meridian places skilled and unskilled talent across construction,
+        Skillmint places skilled and unskilled talent across construction,
         healthcare, aviation and beyond — with compliance, speed and a human
         touch.
       </p>
