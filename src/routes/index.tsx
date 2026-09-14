@@ -1,5 +1,5 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Check, ShieldCheck, UsersRound, Waypoints } from "lucide-react";
+import { ArrowUpRight, Check, Landmark, Monitor, ShieldCheck, UsersRound, Waypoints } from "lucide-react";
 
 import heroImage from "@/assets/meridian-hero.jpg";
 import healthcareImage from "@/assets/meridian-healthcare.jpg";
@@ -27,8 +27,8 @@ function Home() {
       </p>
 
       <h1 className="mt-5 font-display text-5xl font-extrabold leading-[0.92] tracking-tight text-balance sm:text-7xl lg:text-8xl">
-        Serious employers find{" "}
-        <span className="text-primary">capable people.</span>
+        Refining Skills{" "}
+        <span className="text-primary">Minting Success.</span>
       </h1>
 
       <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground">
@@ -104,7 +104,7 @@ function Home() {
     }
   />
 
-  <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
     {[
       [
         "01",
@@ -120,6 +120,11 @@ function Home() {
         "03",
         "HR management",
         "Payroll, onboarding, employee coordination, and workforce administration that stays on track."
+      ],
+      [
+        "04",
+        "Corporate Training",
+        "Upskill your workforce with specialized training programs in BFS, IT, and other key industries."
       ]
     ].map(([number, title, text]) => (
       <div
@@ -149,6 +154,42 @@ function Home() {
     ))}
   </div>
 </section>
+
+{/* --- NEW TRAINING SECTION --- */}
+<section className="border-y border-line bg-card/35">
+  <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+    <SectionIntro
+      eyebrow="Upskill your workforce"
+      title="Specialized Corporate Training"
+      description="We provide industry-focused training to bridge the skill gap, with specialized modules for Banking & Financial Services (BFS) and Information Technology (IT) sectors."
+    />
+    <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="glass-panel rounded-2xl p-8 transition-transform hover:-translate-y-1">
+        <div className="flex items-center gap-4">
+          <span className="grid size-12 place-items-center rounded-full bg-primary/10 text-primary">
+            <Landmark className="size-6" />
+          </span>
+          <h3 className="font-display text-2xl font-bold">Banking & Financial Services (BFS)</h3>
+        </div>
+        <p className="mt-5 text-muted-foreground leading-relaxed">
+          Comprehensive training programs covering banking operations, financial analysis, regulatory compliance, risk management, and customer relationship management tailored for the modern financial landscape.
+        </p>
+      </div>
+      <div className="glass-panel rounded-2xl p-8 transition-transform hover:-translate-y-1">
+        <div className="flex items-center gap-4">
+          <span className="grid size-12 place-items-center rounded-full bg-primary/10 text-primary">
+            <Monitor className="size-6" />
+          </span>
+          <h3 className="font-display text-2xl font-bold">Information Technology (IT)</h3>
+        </div>
+        <p className="mt-5 text-muted-foreground leading-relaxed">
+          Cutting-edge technical training in software development, cloud computing, cybersecurity, data analytics, and emerging technologies, designed to equip professionals with in-demand skills.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{/* --- END NEW TRAINING SECTION --- */}
 
 <section className="border-y border-line bg-card/35">
   <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
@@ -223,6 +264,7 @@ function Home() {
   </div>
 </section>
 
+{/* --- UPDATED INDUSTRIES SECTION (NOW SHOWING ONLY 3) --- */}
 <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
   <SectionIntro
     eyebrow="Skillmint Refining Skills | Minting Success."
@@ -239,12 +281,11 @@ function Home() {
     }
   />
 
-  <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+  <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {[
-      ["Construction", heroImage],
-      ["Healthcare", healthcareImage],
-      ["Hospitality", hospitalityImage],
-      ["Engineering", teamImage]
+      ["Banking & Finance", heroImage],
+      ["Insurance", healthcareImage],
+      ["Information Technology", teamImage]
     ].map(([name, image]) => (
       <Link
         to="/industries"
@@ -273,6 +314,7 @@ function Home() {
     ))}
   </div>
 </section>
+{/* --- END UPDATED INDUSTRIES SECTION --- */}
 
 <section className="mx-auto max-w-7xl px-5 pb-20 lg:px-8">
   <div className="glass-panel grid gap-8 rounded-2xl p-8 md:p-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">

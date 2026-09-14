@@ -322,8 +322,8 @@ function SiteFooter() {
     <footer className="border-t border-white/15 bg-navy text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:px-8">
         <div>
-          {/* Footer Logo - Transparent Background */}
-          <Link to="/" className="inline-flex items-center bg-transparent p-0">
+          {/* Footer Logo - Wrapped in a white container to ensure visibility on dark background */}
+          <Link to="/" className="inline-flex items-center rounded-lg bg-white p-2 shadow-md">
             <img
               src={logo}
               alt="Skillmint Global Solutions logo"
@@ -368,9 +368,9 @@ function SiteFooter() {
           items={[
             "Banking & Finance",
             "Information Technology",
-            "Healthcare",
+            "Insurance",
             "Manufacturing",
-            "Logistics",
+            "Healthcare",
           ]}
         />
 
