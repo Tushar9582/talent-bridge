@@ -80,11 +80,6 @@ function Home() {
   </div>
 </section>
 
-   Updated code mein Visa & stamping aur Immigration service remove kar diye gaye hain. Ab total 3 service containers rahenge, jismein Recruitment handling add kiya gaya hai.
-
-JavaScript
-
-```
 <section className="mx-auto max-w-7xl px-5 py-8 lg:px-8">
   <p className="eyebrow mb-5 text-muted-foreground">
     Trusted by leading companies
