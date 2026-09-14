@@ -75,8 +75,8 @@ export function SiteChrome({ children }: { children: ReactNode }) {
 
           <div className="flex items-center gap-2">
             <Button asChild variant="default" className="hidden rounded-full px-5 sm:inline-flex">
-              <Link to="/contact">
-                Get in touch <ArrowUpRight />
+              <Link to="/careers">
+                Quick Apply <ArrowUpRight />
               </Link>
             </Button>
 

@@ -331,6 +331,38 @@ var Instagram = createLucideIcon("instagram", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Landmark = createLucideIcon("landmark", [
+	["path", {
+		d: "M10 18v-7",
+		key: "wt116b"
+	}],
+	["path", {
+		d: "M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z",
+		key: "1m329m"
+	}],
+	["path", {
+		d: "M14 18v-7",
+		key: "vav6t3"
+	}],
+	["path", {
+		d: "M18 18v-7",
+		key: "aexdmj"
+	}],
+	["path", {
+		d: "M3 22h18",
+		key: "8prr45"
+	}],
+	["path", {
+		d: "M6 18v-7",
+		key: "1ivflk"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Lightbulb = createLucideIcon("lightbulb", [
 	["path", {
 		d: "M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5",
@@ -442,6 +474,36 @@ var MessageSquare = createLucideIcon("message-square", [["path", {
 	d: "M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z",
 	key: "18887p"
 }]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Monitor = createLucideIcon("monitor", [
+	["rect", {
+		width: "20",
+		height: "14",
+		x: "2",
+		y: "3",
+		rx: "2",
+		key: "48i651"
+	}],
+	["line", {
+		x1: "8",
+		x2: "16",
+		y1: "21",
+		y2: "21",
+		key: "1svkeh"
+	}],
+	["line", {
+		x1: "12",
+		x2: "12",
+		y1: "17",
+		y2: "21",
+		key: "vw1qmm"
+	}]
+]);
 /**
 * @license lucide-react v0.575.0 - ISC
 *
@@ -592,4 +654,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { ChevronRight as C, ArrowDown as D, ArrowRight as E, ClipboardList as S, ArrowUpRight as T, Instagram as _, Star as a, FileCheckCorner as b, SearchCheck as c, MessageCircle as d, Menu as f, Lightbulb as g, Linkedin as h, UserCheck as i, Phone as l, Mail as m, UsersRound as n, ShieldCheck as o, MapPin as p, UserRoundCheck as r, Search as s, X as t, MessageSquare as u, Handshake as v, Check as w, CloudUpload as x, FileDown as y };
+export { CloudUpload as C, ArrowUpRight as D, Check as E, ArrowRight as O, FileCheckCorner as S, ChevronRight as T, Lightbulb as _, Star as a, Handshake as b, SearchCheck as c, MessageSquare as d, MessageCircle as f, Linkedin as g, Mail as h, UserCheck as i, ArrowDown as k, Phone as l, MapPin as m, UsersRound as n, ShieldCheck as o, Menu as p, UserRoundCheck as r, Search as s, X as t, Monitor as u, Landmark as v, ClipboardList as w, FileDown as x, Instagram as y };

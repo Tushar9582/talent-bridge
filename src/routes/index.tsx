@@ -72,7 +72,7 @@ function Home() {
         />
 
         <StatBlock
-          value="12"
+          value="12+"
           label="Industries served"
         />
       </div>
