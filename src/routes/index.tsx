@@ -67,8 +67,8 @@ function Home() {
         />
 
         <StatBlock
-          value="1 Lakh"
-          label="Candidates placed"
+          value="100K+"
+          label="Candidate Talent Pool"
         />
 
         <StatBlock
@@ -283,9 +283,9 @@ function Home() {
 
   <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {[
-      ["Banking & Finance", heroImage],
-      ["Insurance", healthcareImage],
-      ["Information Technology", teamImage]
+      ["BFSI", heroImage],
+      ["IT", teamImage],
+      ["BPO/KPO", healthcareImage]
     ].map(([name, image]) => (
       <Link
         to="/industries"
@@ -315,48 +315,6 @@ function Home() {
   </div>
 </section>
 {/* --- END UPDATED INDUSTRIES SECTION --- */}
-
-<section className="mx-auto max-w-7xl px-5 pb-20 lg:px-8">
-  <div className="glass-panel grid gap-8 rounded-2xl p-8 md:p-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-    <div>
-      <p className="eyebrow text-primary">
-        Client voice
-      </p>
-
-      <blockquote className="mt-5 max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-        “Meridian filled two hundred and forty roles across three sites in
-        nine weeks — compliant, on time, and genuinely the right people.”
-      </blockquote>
-
-      <div className="mt-8 flex items-center gap-3">
-        <div className="grid size-11 place-items-center rounded-full bg-teal/15 text-teal">
-          LO
-        </div>
-
-        <div>
-          <div className="text-sm font-semibold">
-            Lena Okafor
-          </div>
-
-          <div className="text-xs text-muted-foreground">
-            Director of Operations, Delta Energy Group
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="hidden overflow-hidden rounded-xl lg:block">
-      <img
-        src={hospitalityImage}
-        alt="Hospitality team welcoming a guest"
-        width={900}
-        height={1100}
-        loading="lazy"
-        className="aspect-[4/5] w-full object-cover"
-      />
-    </div>
-  </div>
-</section>
 
 <section className="aurora-field border-y border-line">
   <div className="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-16 sm:flex-row sm:items-center sm:justify-between lg:px-8">

@@ -154,6 +154,34 @@ var ArrowUpRight = createLucideIcon("arrow-up-right", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Building2 = createLucideIcon("building-2", [
+	["path", {
+		d: "M10 12h4",
+		key: "a56b0p"
+	}],
+	["path", {
+		d: "M10 8h4",
+		key: "1sr2af"
+	}],
+	["path", {
+		d: "M14 21v-3a2 2 0 0 0-4 0v3",
+		key: "1rgiei"
+	}],
+	["path", {
+		d: "M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2",
+		key: "secmi2"
+	}],
+	["path", {
+		d: "M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16",
+		key: "16ra0t"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Check = createLucideIcon("check", [["path", {
 	d: "M20 6 9 17l-5-5",
 	key: "1gmf2c"
@@ -297,6 +325,19 @@ var Handshake = createLucideIcon("handshake", [
 		key: "1ep09j"
 	}]
 ]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var HeartPulse = createLucideIcon("heart-pulse", [["path", {
+	d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
+	key: "mvr1a0"
+}], ["path", {
+	d: "M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27",
+	key: "auskq0"
+}]]);
 /**
 * @license lucide-react v0.575.0 - ISC
 *
@@ -646,6 +687,30 @@ var UsersRound = createLucideIcon("users-round", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Warehouse = createLucideIcon("warehouse", [
+	["path", {
+		d: "M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11",
+		key: "pb2vm6"
+	}],
+	["path", {
+		d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 1.132-1.803l7.95-3.974a2 2 0 0 1 1.837 0l7.948 3.974A2 2 0 0 1 22 8z",
+		key: "doq5xv"
+	}],
+	["path", {
+		d: "M6 13h12",
+		key: "yf64js"
+	}],
+	["path", {
+		d: "M6 17h12",
+		key: "1jwigz"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var X = createLucideIcon("x", [["path", {
 	d: "M18 6 6 18",
 	key: "1bl5f8"
@@ -654,4 +719,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { CloudUpload as C, ArrowUpRight as D, Check as E, ArrowRight as O, FileCheckCorner as S, ChevronRight as T, Lightbulb as _, Star as a, Handshake as b, SearchCheck as c, MessageSquare as d, MessageCircle as f, Linkedin as g, Mail as h, UserCheck as i, ArrowDown as k, Phone as l, MapPin as m, UsersRound as n, ShieldCheck as o, Menu as p, UserRoundCheck as r, Search as s, X as t, Monitor as u, Landmark as v, ClipboardList as w, FileDown as x, Instagram as y };
+export { ArrowUpRight as A, FileDown as C, ChevronRight as D, ClipboardList as E, ArrowDown as M, Check as O, Handshake as S, CloudUpload as T, Linkedin as _, UserCheck as a, Instagram as b, Search as c, Monitor as d, MessageSquare as f, Mail as g, MapPin as h, UserRoundCheck as i, ArrowRight as j, Building2 as k, SearchCheck as l, Menu as m, Warehouse as n, Star as o, MessageCircle as p, UsersRound as r, ShieldCheck as s, X as t, Phone as u, Lightbulb as v, FileCheckCorner as w, HeartPulse as x, Landmark as y };

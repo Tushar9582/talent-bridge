@@ -266,12 +266,18 @@ export function StatBlock({
 
 export function LogoMarquee() {
   const sectors = [
-    "Banking & Finance",
-    "Information Technology",
-    "Healthcare",
+    "BFSI",
+    "IT",
+    "BPO/KPO",
     "Manufacturing",
+    "Healthcare & Pharmaceuticals",
+    "Telecom",
+    "FMCG",
+    "Real Estate",
+    "Education",
     "Logistics",
-    "Hospitality",
+    "Retail & E-commerce",
+    "Automobile",
   ];
 
   return (
@@ -366,11 +372,18 @@ function SiteFooter() {
         <FooterList
           title="Industries"
           items={[
-            "Banking & Finance",
-            "Information Technology",
-            "Insurance",
+            "BFSI",
+            "IT",
+            "BPO/KPO",
             "Manufacturing",
-            "Healthcare",
+            "Healthcare & Pharmaceuticals",
+            "Telecom",
+            "FMCG",
+            "Real Estate",
+            "Education",
+            "Logistics",
+            "Retail & E-commerce",
+            "Automobile",
           ]}
         />
 
