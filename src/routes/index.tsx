@@ -1,9 +1,12 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Check, Landmark, Monitor, ShieldCheck, UsersRound, Waypoints } from "lucide-react";
 
+import bfsiIndustryImage from "@/assets/bfsi.jpg";
 import heroImage from "@/assets/meridian-hero.jpg";
 import healthcareImage from "@/assets/meridian-healthcare.jpg";
 import hospitalityImage from "@/assets/meridian-hospitality.jpg";
+import bpoIndustryImage from "@/assets/bpo.jpg";
+import itIndustryImage from "@/assets/it.jpg";
 import teamImage from "@/assets/meridian-team.jpg";
 import { LogoMarquee, PrimaryLink, ProfileLink, SectionIntro, StatBlock } from "@/components/site-shell";
 
@@ -283,9 +286,9 @@ function Home() {
 
   <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {[
-      ["BFSI", heroImage],
-      ["IT", teamImage],
-      ["BPO/KPO", healthcareImage]
+      ["BFSI", bfsiIndustryImage],
+      ["IT", itIndustryImage],
+      ["BPO/KPO", bpoIndustryImage]
     ].map(([name, image]) => (
       <Link
         to="/industries"
