@@ -12,11 +12,14 @@ import { LogoMarquee, PrimaryLink, ProfileLink, SectionIntro, StatBlock } from "
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
-    { title: "Skill Mint Solutions" },
-    { name: "description", content: "Where talent meets opportunities. Skilled and unskilled workforce placement for serious employers, with compliance, speed, and a human touch." },
-    { property: "og:title", content: "Skill Mint Solutions" },
-    { property: "og:description", content: "Where talent meets opportunities. Skilled and unskilled workforce placement for serious employers." },
-  ] }),
+    { title: "Skill Mint Solutions | Recruitment & Staffing Partner in India" },
+    { name: "description", content: "Skill Mint Solutions is a recruitment and staffing partner in India, connecting businesses with skilled talent across BFSI, IT, BPO/KPO, healthcare, and other industries." },
+    { name: "robots", content: "index, follow" },
+    { property: "og:title", content: "Skill Mint Solutions | Recruitment & Staffing Partner in India" },
+    { property: "og:description", content: "Skill Mint Solutions is a recruitment and staffing partner in India, connecting businesses with skilled talent across BFSI, IT, BPO/KPO, healthcare, and other industries." },
+    { name: "twitter:title", content: "Skill Mint Solutions | Recruitment & Staffing Partner in India" },
+    { name: "twitter:description", content: "Skill Mint Solutions is a recruitment and staffing partner in India, connecting businesses with skilled talent across BFSI, IT, BPO/KPO, healthcare, and other industries." },
+  ], links: [{ rel: "canonical", href: "https://skillmintglobal.com/" }] }),
   component: Home,
 });
 

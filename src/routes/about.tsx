@@ -7,9 +7,9 @@ import { PageBanner, PrimaryLink, SectionIntro } from "@/components/site-shell";
 export const Route = createFileRoute("/about")({ 
   head: () => ({ 
     meta: [
-      { title: "About Skillmint Global Solutions" }, 
-      { name: "description", content: "Learn how Skillmint Global Solutions helps organisations build capable, dependable teams through ethical recruitment." }, 
-      { property: "og:title", content: "About Skillmint Global Solutions" }, 
+      { title: "About Skill Mint Solutions" }, 
+      { name: "description", content: "Learn how Skill Mint Solutions helps organisations build capable, dependable teams through ethical recruitment." }, 
+      { property: "og:title", content: "About Skill Mint Solutions" }, 
       { property: "og:description", content: "A Pune-based recruitment partner built on integrity, partnership, innovation, and excellence." }, 
       { property: "og:type", content: "website" }, 
       { name: "twitter:card", content: "summary_large_image" }

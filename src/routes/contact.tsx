@@ -7,12 +7,12 @@ import { PageBanner } from "@/components/site-shell";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Skillmint Global Solutions" },
+      { title: "Contact Skill Mint Solutions" },
       {
         name: "description",
-        content: "Speak with Skillmint Global Solutions about recruitment and workforce support.",
+        content: "Speak with Skill Mint Solutions about recruitment and workforce support.",
       },
-      { property: "og:title", content: "Contact Skillmint Global Solutions" },
+      { property: "og:title", content: "Contact Skill Mint Solutions" },
       { property: "og:description", content: "Tell us what your team needs next." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

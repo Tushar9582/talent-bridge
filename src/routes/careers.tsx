@@ -9,13 +9,13 @@ const MAX_RESUME_SIZE = 5 * 1024 * 1024;
 export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
-      { title: "Careers | Skillmint Global Solutions" },
+      { title: "Careers | Skill Mint Solutions" },
       {
         name: "description",
         content:
-          "Share your experience with Skillmint Global Solutions and explore suitable career opportunities.",
+          "Share your experience with Skill Mint Solutions and explore suitable career opportunities.",
       },
-      { property: "og:title", content: "Careers | Skillmint Global Solutions" },
+      { property: "og:title", content: "Careers | Skill Mint Solutions" },
       {
         property: "og:description",
         content: "Your next opportunity may start with a simple application.",

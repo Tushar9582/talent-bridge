@@ -78,14 +78,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-       { title: "Skillmint Global Solutions | HR & Manpower Consultancy" },
-       { name: "description", content: "Skillmint Global Solutions connects organisations with capable professionals through dependable HR, recruitment, and workforce solutions in Pune and beyond." },
-       { name: "author", content: "Skillmint Global Solutions" },
-       { property: "og:title", content: "Skillmint Global Solutions | HR & Manpower Consultancy" },
-       { property: "og:description", content: "Refining Skills. Minting Success. Human recruitment and workforce solutions from Pune." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-       { name: "twitter:site", content: "@skillmintglobal" },
        { rel: "preconnect", href: "https://fonts.googleapis.com" },
        { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" },
@@ -109,6 +103,17 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Skill Mint Solutions",
+              url: "https://skillmintglobal.com/",
+            }),
+          }}
+        />
       </head>
       <body>
         {children}

@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown, ClipboardList, FileCheck2, MessageSquare, Search, UserCheck, UsersRound } from "lucide-react";
 import { PageBanner, PrimaryLink } from "@/components/site-shell";
 
-export const Route = createFileRoute("/process")({ head: () => ({ meta: [{ title: "Recruitment Process | Skillmint Global Solutions" }, { name: "description", content: "See how Skillmint Global Solutions moves from requirement understanding to selection and follow-up." }, { property: "og:title", content: "Recruitment Process | Skillmint" }, { property: "og:description", content: "A clear, structured, and human recruitment journey." }] }), component: ProcessPage });
+export const Route = createFileRoute("/process")({ head: () => ({ meta: [{ title: "Recruitment Process | Skill Mint Solutions" }, { name: "description", content: "See how Skill Mint Solutions moves from requirement understanding to selection and follow-up." }, { property: "og:title", content: "Recruitment Process | Skill Mint Solutions" }, { property: "og:description", content: "A clear, structured, and human recruitment journey." }] }), component: ProcessPage });
 
 const steps = [
   { icon: ClipboardList, title: "Understand the Requirement", text: "We discuss the position, experience, qualifications, skills, salary range, location, and preferred candidate profile." },
