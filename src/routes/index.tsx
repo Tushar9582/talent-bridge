@@ -12,10 +12,10 @@ import { LogoMarquee, PrimaryLink, ProfileLink, SectionIntro, StatBlock } from "
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
-    { title: "Skillmint Refining Skills | Minting Success." },
-    { name: "description", content: "Skilled and unskilled workforce placement for serious employers across the Gulf, with compliance, speed, and a human touch." },
-    { property: "og:title", content: "Skillmint Refining Skills | Minting Success." },
-    { property: "og:description", content: "The trusted bridge between capable people and serious employers." },
+    { title: "Skill Mint Solutions" },
+    { name: "description", content: "Where talent meets opportunities. Skilled and unskilled workforce placement for serious employers, with compliance, speed, and a human touch." },
+    { property: "og:title", content: "Skill Mint Solutions" },
+    { property: "og:description", content: "Where talent meets opportunities. Skilled and unskilled workforce placement for serious employers." },
   ] }),
   component: Home,
 });
@@ -270,7 +270,7 @@ function Home() {
 {/* --- UPDATED INDUSTRIES SECTION (NOW SHOWING ONLY 3) --- */}
 <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
   <SectionIntro
-    eyebrow="Skillmint Refining Skills | Minting Success."
+    eyebrow="Skill Mint Solutions"
     title="Industries we understand"
     description="Specialists who speak the language of your work, from the field to the boardroom."
     action={
