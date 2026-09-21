@@ -130,7 +130,7 @@ function Home() {
       [
         "04",
         "Corporate Training",
-        "Upskill your workforce with specialized training programs in BFS, IT, and other key industries."
+        "Upskill your workforce with specialized training programs in BFSI, IT, and other key industries."
       ]
     ].map(([number, title, text]) => (
       <div
@@ -167,7 +167,7 @@ function Home() {
     <SectionIntro
       eyebrow="Upskill your workforce"
       title="Specialized Corporate Training"
-      description="We provide industry-focused training to bridge the skill gap, with specialized modules for Banking & Financial Services (BFS) and Information Technology (IT) sectors."
+      description="We provide industry-focused training to bridge the skill gap, with specialized modules for Banking & Financial Services (BFSI) and Information Technology (IT) sectors."
     />
     <div className="mt-10 grid gap-4 md:grid-cols-2">
       <div className="glass-panel rounded-2xl p-8 transition-transform hover:-translate-y-1">
@@ -175,7 +175,7 @@ function Home() {
           <span className="grid size-12 place-items-center rounded-full bg-primary/10 text-primary">
             <Landmark className="size-6" />
           </span>
-          <h3 className="font-display text-2xl font-bold">Banking & Financial Services (BFS)</h3>
+          <h3 className="font-display text-2xl font-bold">Banking & Financial Services (BFSI)</h3>
         </div>
         <p className="mt-5 text-muted-foreground leading-relaxed">
           Comprehensive training programs covering banking operations, financial analysis, regulatory compliance, risk management, and customer relationship management tailored for the modern financial landscape.
